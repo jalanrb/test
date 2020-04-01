@@ -1,0 +1,111 @@
+    body {
+        cursor: url(http://www.rw-designer.com/cursor-view/31321.gif
+), auto;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @include header-font-style($font-head);
+        color: $color-1;
+        text-shadow: 4px 1px 1px $color-4;
+        border-radius: 10px;
+    }
+    
+    h1,
+    h2 {
+        font-size: 100px;
+        font-weight: bolder;
+        transform: rotateX(60deg) translateZ(10px);
+        text-shadow: 6px 1px 2px $color-1;
+    }
+    
+    h3 {
+        border-bottom: 7px outset lighten($color-3, 20%);
+        padding: 0;
+        font-size: $font-1qr;
+        font-weight: bolder;
+        font-style: italic;
+        padding: $pad-hf;
+        animation: test 3s linear infinite;
+    }
+    
+    @keyframes test {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    p {
+        @include header-font-style($font-para);
+        color: $color-5;
+        padding: $pad-1w;
+        font-size: 23px;
+        background: rgba(38, 38, 38, 0.5);
+        box-shadow: 0px 0px 20px 15px rgba(38, 38, 38, 0.5);
+        margin: 13px;
+        border-radius: 10px;
+        animation: para 5s linear infinite;
+    }
+    
+    @keyframes para {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    a:hover {
+        color: lighten($color-3, 50%);
+    }
+    
+    .summary a {
+        text-decoration: underline;
+    }
+    
+    abbr {
+        text-decoration: none;
+    }
+    
+    header,
+    .summary {
+        text-align: $align-cen;
+        padding: $pad-1w;
+        padding-top: 0;
+    }
+    
+    header {
+        font-size: $font-2w;
+        perspective: 2000px;
+        perspective-origin: 50% -200px;
+    }
+    
+    body {
+        background-color: $color-4;
+        background: url(../img/space_background.png);
+    }
+    
+    a {
+        font-family: $font-para;
+        color: $color-1;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px $color-4;
+    }
+    
+    [title ^="Check the validity of this site&#8217;s HTML"]:after {
+        background-color: $color-5;
+    }
